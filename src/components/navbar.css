@@ -1,0 +1,25 @@
+.sidebar {
+  /* important styles */
+  flex-shrink: 0;
+  width: 20vw; /* make this whatever you need */
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+
+  /* 
+    you could use `position: absolute` above, but using
+    `sticky` means we don't need to separately move the
+    content section over to prevent the elements from
+    overlapping
+  */
+
+  /* extra styles */
+  padding: 16px;
+  border: 3px solid seagreen;
+}
+
+/* make the nav take up more room :P */
+.nav li {
+  line-height: 1.5;
+}
