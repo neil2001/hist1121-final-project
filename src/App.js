@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import NavBar from "./components/navbar";
-import Section from "./components/section";
-import Title from "./components/title";
+import NavBar from "./assets/components/navbar";
+import Section from "./assets/components/section";
+import Title from "./assets/components/title";
 
 function App() {
   return (
