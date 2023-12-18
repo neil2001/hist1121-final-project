@@ -21,6 +21,12 @@ const imageStyle = {
     borderRadius: '5px'
 }
 
+const viewportStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+}
+
 const CustomOverlay = (text) => {
     return (
       <div style={{ background: 'rgba(0, 0, 0, 0.7)', padding: '10px', borderRadius: '5px', color: 'white' }}>
