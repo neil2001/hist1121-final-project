@@ -1,0 +1,10 @@
+a {
+    text-decoration: none; /* Remove underlines from links */
+    color: blue; /* Change the color of the link text */
+  }
+  
+sup {
+    font-size: smaller;
+    vertical-align: super;
+    line-height: 0;
+}

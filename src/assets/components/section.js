@@ -2,8 +2,53 @@ import React from "react";
 import "./section.css";
 import Title from "./title";
 import Artifacts from "./artifacts";
+import Citation from "./citation";
+import Cite from "./cite";
+
+const citations = [
+  `Lee, Haiyan. “The Ruins of Yuanmingyuan: Or, How to Enjoy a National Wound.” Modern 
+China 35, no. 2 (2009): 155–90. http://www.jstor.org/stable/27746912.`
+,
+`Ho, Denise Y. “Revolutionizing Antiquity: The Shanghai Cultural Bureaucracy in the Cultural 
+Revolution, 1966-1968.” The China Quarterly, no. 207 (2011): 687–705. http://www.jstor.org/stable/41305263.`
+,
+`Gao, Lei, and Marc Treib. “Making and Remaking the Yuanmingyuan.” Future Anterior: 
+Journal of Historic Preservation, History, Theory, and Criticism 3, no. 1 (2006): 10–23. http://www.jstor.org/stable/25834984.`
+,
+`Weatherley, Robert D., and Ariane Rosen. “Fanning the Flames of Popular Nationalism: The 
+Debate in China over the Burning of the Old Summer Palace.” Asian Perspective 37, no. 1 (2013): 53–76. http://www.jstor.org/stable/42704818.
+`
+,
+`Fotopoulos, Annetta. “Understanding the Zodiac Saga in China: World Cultural Heritage, 
+National Humiliation, and Evolving Narratives.” Modern China 41, no. 6 (2015): 603–30. http://www.jstor.org/stable/24575596.
+`
+,
+`Rujivacharakul, Vimalin. “How to Map Ruins: Yuanming Yuan Archives and Chinese 
+Architectural History.” Getty Research Journal, no. 4 (2012): 91–108. 
+http://www.jstor.org/stable/41413134.`
+,
+`Chao, Loretta, and Kelly Crow. 2009. “Chinese Applaud Art Dealer Who Refuses to Honor Bids.” The Wall Street Journal, March 4, 2009. https://www.wsj.com/articles/SB123610861077721441.
+`
+,
+`Feng, Bree. 2014. “Despite Frigid Relations, Chinese Relics Coming Home from Norway.” Sinosphere Blog. February 9, 2014. https://archive.nytimes.com/sinosphere.blogs.nytimes.com/2014/02/09/despite-frigid-relations-chinese-relics-coming-home-from-norway/.
+Melikian, Souren, and International Herald Tribune. 2000. “Auction Houses Add Insult to Injury.” The New York Times, May 6, 2000, sec. Style. https://www.nytimes.com/2000/05/06/style/IHT-auction-houses-add-insult-to-injury.html.
+`
+,
+`Opoku, Kwame. 2016. “Chinese Purchase of Chinese Looted Artifacts: An Example for Other States? | Pambazuka News.” Www.pambazuka.org. March 5, 2016. https://www.pambazuka.org/governance/chinese-purchase-chinese-looted-artifacts-example-other-states.
+`
+,
+`Xi, Chen. 2019. “Chinese Tycoon Stanley Ho Donates Recovered Qing Dynasty Zodiac Bronze Head to National Museum of China - Global Times.” Www.globaltimes.cn. Global Times. November 14, 2019. https://www.globaltimes.cn/content/1170050.shtml#:~:text=The%20Pig%20zodiac%20head%20he.
+`
+,
+`Xi, Chesn. 2023. “Seven Artifacts Returned to Yuanmingyuan, Marking Significant Progress in Repatriation of Relics Lost Overseas.” Global Times. Global Times. October 13, 2023. https://www.globaltimes.cn/page/202310/1299808.shtml.
+`
+]
 
 const Section = () => {
+
+  const bibliography = Array.from(citations, (citation, index) => (
+    <Citation idx={index} text={citation} />));
+  
   return (
     <div id="home" className="content">
 
@@ -223,12 +268,15 @@ const Section = () => {
       
       
       <p>
-      Largely speaking however, it is expected that the majority of smaller artifacts such as the ones highlighted within this project will remain away from their origins in China. Due to both the sheer number of artifacts floating around in private and public collections as well as the government's focus on larger more instrumental pieces such as the marble columns and zodiac heads, seeking the return of these artifacts is much less a priority. 
+      Largely speaking however,<Cite src={1}/> it is expected that the majority of smaller artifacts such as the ones highlighted within this project will remain away from their origins in China. Due to both the sheer number of artifacts floating around in private and public collections as well as the government's focus on larger more instrumental pieces such as the marble columns and zodiac heads, seeking the return of these artifacts is much less a priority. 
       </p>
       <p>
       To conclude, it is our belief that if artifacts cannot be returned to their original location, they deserve to be enjoyed digitally within our website. Moreover, learning about the history behind the Old Summer Palace and what makes the ruins such an impactful and symbolic spaces, brings rightful attention to the tragic destruction of art, life, and culture during the Palace's 1860 destruction. We may never find or learn about some of the most valuable artifacts whisked away from the Old Summer Palace, but we can take the time to learn it's significance and devote proper reverence to its history. 
       </p>
       <h2 id="bibliography">Bibliography</h2>
+      <ol className="references">
+        {bibliography}
+      </ol>
       </div>
     </div>
   );
