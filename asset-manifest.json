@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hist1121-final-project/static/css/main.624c45dc.css",
-    "main.js": "/hist1121-final-project/static/js/main.2aa9bc7d.js",
+    "main.js": "/hist1121-final-project/static/js/main.d9b86361.js",
     "static/js/787.d1fc22ae.chunk.js": "/hist1121-final-project/static/js/787.d1fc22ae.chunk.js",
     "static/media/artifact9.png": "/hist1121-final-project/static/media/artifact9.e69c9cc158d5387a76c4.png",
     "static/media/artifact8.png": "/hist1121-final-project/static/media/artifact8.7bb6b82ba04954bdf3a5.png",
@@ -13,16 +13,17 @@
     "static/media/artifact14.png": "/hist1121-final-project/static/media/artifact14.8a41f1ec778fc3398e2f.png",
     "static/media/artifact16.png": "/hist1121-final-project/static/media/artifact16.f028b184fa2145b939ea.png",
     "static/media/artifact7.png": "/hist1121-final-project/static/media/artifact7.ed9688722eabb018d22a.png",
+    "static/media/artifact13.png": "/hist1121-final-project/static/media/artifact13.0fa91d470a183ff9ad24.png",
     "static/media/artifact6.png": "/hist1121-final-project/static/media/artifact6.ae90329804ba04bf02c2.png",
     "static/media/artifact4.png": "/hist1121-final-project/static/media/artifact4.a6b9f48db30afbc949af.png",
-    "static/media/artifact13.png": "/hist1121-final-project/static/media/artifact13.7910fa30326678c210ac.png",
     "static/media/artifact18.png": "/hist1121-final-project/static/media/artifact18.74e6300447586468afc1.png",
     "static/media/artifact11.png": "/hist1121-final-project/static/media/artifact11.8328dcbe42eb4427245d.png",
     "static/media/courtyard.png": "/hist1121-final-project/static/media/courtyard.bc32e0086b8eb9f08df8.png",
     "static/media/artifact3.png": "/hist1121-final-project/static/media/artifact3.288f754baa6cf7dc845d.png",
     "static/media/artifact1.png": "/hist1121-final-project/static/media/artifact1.34ab4e8f55f293bb4708.png",
+    "static/media/artifact19.png": "/hist1121-final-project/static/media/artifact19.337185945641b2a7d7fd.png",
+    "static/media/artifact17.png": "/hist1121-final-project/static/media/artifact17.21e832733093b73fe904.png",
     "static/media/artifact2.png": "/hist1121-final-project/static/media/artifact2.a364023524129e1ea30e.png",
-    "static/media/artifact17.png": "/hist1121-final-project/static/media/artifact17.d199d3c33b04c0b2d383.png",
     "static/media/looting.jpeg": "/hist1121-final-project/static/media/looting.1754a2dce89214335107.jpeg",
     "static/media/maze.png": "/hist1121-final-project/static/media/maze.30e0cb735a70791c0502.png",
     "static/media/qing-justice.jpeg": "/hist1121-final-project/static/media/qing-justice.1ac996b32b0325207701.jpeg",
@@ -37,11 +38,11 @@
     "static/media/emperor-residence.jpeg": "/hist1121-final-project/static/media/emperor-residence.a86d8410a359724becfb.jpeg",
     "index.html": "/hist1121-final-project/index.html",
     "main.624c45dc.css.map": "/hist1121-final-project/static/css/main.624c45dc.css.map",
-    "main.2aa9bc7d.js.map": "/hist1121-final-project/static/js/main.2aa9bc7d.js.map",
+    "main.d9b86361.js.map": "/hist1121-final-project/static/js/main.d9b86361.js.map",
     "787.d1fc22ae.chunk.js.map": "/hist1121-final-project/static/js/787.d1fc22ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.624c45dc.css",
-    "static/js/main.2aa9bc7d.js"
+    "static/js/main.d9b86361.js"
   ]
 }
