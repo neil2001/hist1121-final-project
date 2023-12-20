@@ -54,24 +54,53 @@
 
 .caption {
   bottom: 0;
-  left: 0;
-  right: 0;
+  /* left: 50%; */
   /* background-color: rgba(0, 0, 0, 0.7); */
+  transform: translateX(17%);
+
   color: gray;
-  padding: 10px;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: smaller;
+  width: 300px;
+}
+
+#red-guard {
+  transform: translateX(0%);
+
 }
 
 .imageRow {
   display: flex;
   justify-content: center;
 }
+
+.imageRow .caption {
+  bottom: 0;
+  left: 0px;
+  transform: translateX(0%);
+  /* left: 50%; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  color: gray;
+  margin-bottom: 20px;
+  font-size: smaller;
+  width: 300px;
+}
+
 .imageRow .image {
   margin-left: 20px;
 }
 
+.footer {
+  height:20vh;
+  position: relative;
+}
 
+.footerText {
+  position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+}
 
 .ReactGridGallery div {
   justify-content: center;

@@ -1,9 +1,9 @@
 import React from "react";
 import "./cite.css";
 
-const Cite = ({src}) => {
+const Cite = ({idx, src}) => {
     return (
-        <a href={`#cite-${src}`}><sup>{src}</sup></a>
+        <a href={`#cite-${src}`}><sup>[{src}]</sup></a>
     )
 }
 
