@@ -2,11 +2,16 @@ import { Gallery } from "react-grid-gallery";
 
 const importAll = (context) => context.keys().map(context);
 
-const getImageCount = () => {
+const getImageCount = (directory) => {
+  // const regex = `\\.${type}$`;
   try {
     // Dynamically import all PNG files from the 'artifacts' directory
-    const images = importAll(require.context('../images/artifacts/', false, /\.(png)$/));
-    return images.length;
+    if (directory === 'artifacts') {
+      return importAll(require.context('../images/artifacts/', false, new RegExp(`\\.png$`))).length;
+    }
+    if (directory === 'ruins') {
+      return importAll(require.context('../images/ruins/', false, new RegExp(`\\.jpeg$`))).length;
+    }
   } catch (error) {
     console.error('Error loading images:', error);
     return 0;
@@ -29,20 +34,20 @@ const viewportStyle = {
 
 const CustomOverlay = (text) => {
     return (
-      <div style={{ background: 'rgba(0, 0, 0, 0.7)', padding: '10px', borderRadius: '5px', color: 'white' }}>
+      <div style={{ background: 'rgba(0, 0, 0, 0.7)', padding: '5px', borderRadius: '5px', color: 'white', textAlign: 'center', fontSize: 'smaller'}}>
         <p>{text}</p>
         {/* Add your content here */}
       </div>
     );
   };
 
-const Artifacts = ({directory, descriptions}) => {
+const Artifacts = ({directory, name, type, descriptions}) => {
     // const directory = 'artifacts';
-    const numImages = getImageCount();
+    const numImages = getImageCount(directory);
 
     // Generate the list of images
     const images = Array.from({ length: numImages }, (_, index) => ({
-        src: require(`../images/${directory}/artifact${index + 1}.png`),
+        src: require(`../images/${directory}/${name}${index + 1}.${type}`),
         customOverlay: CustomOverlay(descriptions[index]),
     }));
 

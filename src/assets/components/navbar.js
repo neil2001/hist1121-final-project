@@ -18,6 +18,9 @@ const NavBar = () => {
         <a href="#second-opium-war">The Second Opium War</a>
       </li>
       <li>
+        <a href="#depicting-ruins">Depicting the Ruins</a>
+      </li>
+      <li>
         <a href="#artifacts">Artifacts</a>
       </li>
       <li> <a href="#modern-perspective">Modern Perspective</a></li>
