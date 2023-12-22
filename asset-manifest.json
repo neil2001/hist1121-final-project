@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hist1121-final-project/static/css/main.624c45dc.css",
-    "main.js": "/hist1121-final-project/static/js/main.8f217144.js",
+    "main.js": "/hist1121-final-project/static/js/main.36bd1208.js",
     "static/js/787.d1fc22ae.chunk.js": "/hist1121-final-project/static/js/787.d1fc22ae.chunk.js",
     "static/media/artifact9.png": "/hist1121-final-project/static/media/artifact9.e69c9cc158d5387a76c4.png",
     "static/media/artifact8.png": "/hist1121-final-project/static/media/artifact8.7bb6b82ba04954bdf3a5.png",
@@ -61,11 +61,11 @@
     "static/media/emperor-residence.jpeg": "/hist1121-final-project/static/media/emperor-residence.a86d8410a359724becfb.jpeg",
     "index.html": "/hist1121-final-project/index.html",
     "main.624c45dc.css.map": "/hist1121-final-project/static/css/main.624c45dc.css.map",
-    "main.8f217144.js.map": "/hist1121-final-project/static/js/main.8f217144.js.map",
+    "main.36bd1208.js.map": "/hist1121-final-project/static/js/main.36bd1208.js.map",
     "787.d1fc22ae.chunk.js.map": "/hist1121-final-project/static/js/787.d1fc22ae.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.624c45dc.css",
-    "static/js/main.8f217144.js"
+    "static/js/main.36bd1208.js"
   ]
 }
